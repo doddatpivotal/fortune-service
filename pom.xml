@@ -187,12 +187,15 @@
             <extensions>true</extensions>
             <configuration>
               <contractsRepositoryUrl>${repo.with.binaries}</contractsRepositoryUrl>
+              <contractsRepositoryUsername>${m2.settings.repo.username}</contractsRepositoryUsername>
+              <contractsRepositoryPassword>${m2.settings.repo.password}</contractsRepositoryPassword>
               <contractDependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>${project.artifactId}</artifactId>
                 <classifier>stubs</classifier>
                 <version>${latest.production.version}</version>
               </contractDependency>
+              <contractsMode>REMOTE</contractsMode>
               <contractsPath>/</contractsPath>
               <baseClassForTests>io.pivotal.fortune.BaseClass</baseClassForTests>
               <basePackageForTests>io.pivotal.fortune.contracttests</basePackageForTests>
