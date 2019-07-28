@@ -4,7 +4,7 @@ test:
     - name: fortune-db
       type: broker
       broker: p.mysql
-      plan: single-node-3.7
+      plan: db-small
       useExisting: true
     - name: config-server
       type: broker
@@ -17,7 +17,7 @@ test:
     - name: cloud-bus
       type: broker
       broker: p-rabbitmq
-      plan: standard
+      plan: single-node-3.7
       useExisting: true
     - name: service-registry
       type: broker
