@@ -148,7 +148,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
           </plugin>
-          <!-- <plugin>
+          <plugin>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-contract-maven-plugin</artifactId>
             <version>${spring-cloud-contract.version}</version>
@@ -157,7 +157,7 @@
               <baseClassForTests>io.pivotal.fortune.BaseClass</baseClassForTests>
               <basePackageForTests>io.pivotal.fortune.contracttests</basePackageForTests>
             </configuration>
-          </plugin> -->
+          </plugin>
         </plugins>
       </build>
     </profile>
