@@ -190,7 +190,7 @@
                 <classifier>stubs</classifier>
                 <version>${latest.production.version}</version>
               </contractDependency>
-              <contractsMode>LOCAL</contractsMode>
+              <contractsMode>REMOTE</contractsMode>
               <contractsPath>/</contractsPath>
               <baseClassForTests>io.pivotal.fortune.BaseClass</baseClassForTests>
               <basePackageForTests>io.pivotal.fortune.contracttests</basePackageForTests>
